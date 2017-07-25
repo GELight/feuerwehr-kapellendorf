@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "id": "xxx",
+      "firstName": "xxx",
+      "lastName": "yyy",
+      "board": false,
+      "honor": false,
+      "boardChairman": false,
+      "deputyBoardChairman": false,
+      "treasurer": false,
+      "secretary": false,
+      "assessor": false,
+      "youthDepartment": {
+          "member": [],
+          "tasks": [
+              {
+                  "name": "youthOfficer",
+                  "active": true
+              }
+          ]
+      },
+      "operationsDepartment": {
+          "safetyOfficer": false,
+          "groupLeader": false,
+          "chiefGuard": false,
+          "squadLeader": false,
+          "troopMan": true,
+          "operationalTasks": [
+              { 
+                  "name": "agt", 
+                  "active": true
+              },
+              { 
+                  "name": "ma", 
+                  "active": true
+              },
+              { 
+                  "name": "ksf",
+                  "active": true
+              }
+          ],
+          "militaryCommittee": [
+              { "job": "youthOfficer" }
+          ],
+          "member": [
+              { "job": "troopMan" }
+          ],
+          "fireChief": false,
+          "deputyFireChief": false,
+          "youthOfficer": false,
+          "childrenOfficer": false,
+          "equipmentOfficer": false,
+          "assessor": false,
+          "representativeHonorDepartment": false,
+          "saftyOfficer": false
+      }
+    }
+  ]
+}
