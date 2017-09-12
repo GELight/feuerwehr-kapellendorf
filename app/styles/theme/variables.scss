@@ -19,7 +19,7 @@ $color-info:      	$color-default;		// Info
 $color-success:	  	$color-default;		// Success
 $color-warning:	  	$color-default;		// Warning
 $color-danger:    	$color-default;		// Danger
-$color-highlighted:	#51AFC7;
+$color-highlighted:	#880A0A;
 
 //
 // Layout Colors
@@ -34,7 +34,7 @@ $text-fontFamily: "ProximaNovaLight","Helvetica Neue",Helvetica,Arial,sans-serif
 $text-fontSize-default: .85rem;
 $text-lineHeight-default: 1rem;
 
-$text-color-default:  lighten($color-default, 100%);
+$text-color-default:  lighten($color-default, 50%);
 $text-color-primary:  darken($color-primary, 0%);
 $text-color-info:     darken($color-info, 50%);
 $text-color-success:  darken($color-success, 40%);

@@ -14,8 +14,13 @@
 		}
 	}
 
-	.navbar-brand {
+	.navbar-toggle {
 		
+	}
+
+	.navbar-brand {
+		color: $color-primary;
+
 		@include media-breakpoint-down(xs) {
 			font-size: 1em;
 			margin-top: .3em;
