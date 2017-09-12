@@ -7,9 +7,6 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
-    i18n: {
-      defaultLocale: 'de'
-    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -19,18 +16,6 @@ module.exports = function(environment) {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
       }
-    },
-    
-    googleFonts: [
-      'Open+Sans:300,400,700',
-      'Gudea:100,400,700',
-      'Homemade+Apple:100,400,700'
-    ],
-
-    // Set or update content security policies
-    contentSecurityPolicy: {
-      'font-src': "'self' fonts.gstatic.com",
-      'style-src': "'self' fonts.googleapis.com"
     },
 
     APP: {
