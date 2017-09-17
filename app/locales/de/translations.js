@@ -2,7 +2,7 @@ export default {
   application: {
     brand: {
       short: "FFWM",
-      long: "Freiwillige Feuerwehr Molsdorf"
+      long: "Freiwillige Feuerwehr Kapellendorf"
     },
     together: "Gemeinsam für euch!"
   },
