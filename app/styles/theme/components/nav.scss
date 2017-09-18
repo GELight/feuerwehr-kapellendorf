@@ -49,9 +49,10 @@
 
 	.navbar-nav {
 		margin-bottom: -1.3em;
-		
+
 		a {
-			font-size: .85em;
+			font-size: 1.1em;
+			font-family: 'Asap Condensed', sans-serif;
 
 			&:hover {
 				color: $text-color-primary;
