@@ -26,6 +26,7 @@
 
 		.city {
 			font-size: 1.21em;
+			color: lighten($text-color-default, 100%);
 		}
 
 		@include media-breakpoint-down(xs) {
@@ -47,6 +48,7 @@
 	}
 
 	.navbar-nav {
+		margin-bottom: -1.3em;
 		
 		a {
 			font-size: .85em;
