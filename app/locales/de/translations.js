@@ -1,8 +1,8 @@
 export default {
   application: {
     brand: {
-      short: "FFWM",
-      long: "Freiwillige Feuerwehr Kapellendorf"
+      city: "Kapellendorf",
+      title: "Feuerwehr"
     },
     together: "Gemeinsam für euch!"
   },
