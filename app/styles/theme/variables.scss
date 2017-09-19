@@ -1,7 +1,7 @@
 
 $font-family-base: 'Gudea', sans-serif;
-$brand-primary: #dc3d00;
-$body-bg: #242424;
+$brand-primary: #ff5400;
+$body-bg: #f5eeea;
 
 //
 // Color Offsets
@@ -19,7 +19,7 @@ $color-info:      	$color-default;		// Info
 $color-success:	  	$color-default;		// Success
 $color-warning:	  	$color-default;		// Warning
 $color-danger:    	$color-default;		// Danger
-$color-highlighted:	#880A0A;
+$color-highlighted:	#ff5400;
 
 //
 // Layout Colors
@@ -34,7 +34,7 @@ $text-fontFamily: "ProximaNovaLight","Helvetica Neue",Helvetica,Arial,sans-serif
 $text-fontSize-default: .85rem;
 $text-lineHeight-default: 1rem;
 
-$text-color-default:  lighten($color-default, 50%);
+$text-color-default:  darken($color-default, 50%);
 $text-color-primary:  darken($color-primary, 0%);
 $text-color-info:     darken($color-info, 50%);
 $text-color-success:  darken($color-success, 40%);
