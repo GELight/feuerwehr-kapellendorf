@@ -22,21 +22,33 @@ export default Ember.Route.extend(ResetScrollMixin, {
           active: false
         },
         {
-          ico: "truck",
+          ico: "group",
+          localization: "navigation.fireequipment",
+          link: "fireequipment",
+          active: false
+        },
+        {
+          ico: "group",
+          localization: "navigation.members",
+          link: "members",
+          active: false
+        },
+        {
+          ico: "group",
           localization: "navigation.operation",
           link: "operation",
           active: false
         },
         {
-          ico: "child",
-          localization: "navigation.youth",
-          link: "youth",
+          ico: "group",
+          localization: "navigation.publicrelation",
+          link: "publicrelation",
           active: false
         },
         {
-          ico: "flag",
-          localization: "navigation.honor",
-          link: "honor",
+          ico: "group",
+          localization: "application.brand.city",
+          link: "index",
           active: false
         }
       ],

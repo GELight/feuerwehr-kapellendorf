@@ -9,17 +9,36 @@ body {
 }
 
 body {
-	background-color: darken($body-bg, $color-offset-default / 2);
 	font-size: $text-fontSize-default;
+	font-family: $font-family-base;
+	background: $body-bg;
+	background: -moz-linear-gradient(top, $body-bg 1%, darken($body-bg, 4%) 9%, $body-bg 39%, darken($body-bg, 7%) 100%);
+	background: -webkit-linear-gradient(top, $body-bg 1%,darken($body-bg, 4%) 9%,$body-bg 39%,darken($body-bg, 7%) 100%);
+	background: linear-gradient(to bottom, $body-bg 1%,darken($body-bg, 4%) 9%,$body-bg 39%,darken($body-bg, 7%) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$body-bg', endColorstr='darken($body-bg, 7%)',GradientType=0 );
+	color: $text-color-default;
+
+	> .ember-view {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('/img/body.png');
+		background-position: top center;
+		z-index: 1;
+	}
 }
+
 
 
 // Global transition for all link hover
 a {
 	color: $text-color-default;
+	@include transition();
 	
 	&:hover {
-		@include transition();
+		color: $text-color-default;
 	}
 }
 

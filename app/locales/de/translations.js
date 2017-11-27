@@ -2,21 +2,24 @@ export default {
   application: {
     brand: {
       city: "Kapellendorf",
-      title: "Feuerwehr"
+      title: "Freiwillige Feuerwehr"
     },
     together: "Gemeinsam für euch!"
   },
   navigation: {
     welcome: "Willkommen",
     association: "Verein",
-    operation: "Einsatzabteilung",
+    operation: "Einsätze",
+    fireequipment: "Feuerlöschwesen",
+    members: "Mitglieder",
+    publicrelation: "Öffentlichkeitsarbeit",
+    
+    honor: "Ehrenabteilung",
     youth: "Jugendfeuerwehr",
     education: "Ausbildung",
     childfirebrigade: "Kinderfeuerwehr",
-    honor: "Ehrenabteilung",
     timetable: "Dienstplan",
     technology: "Technik",
-    members: "Mitglieder",
     timeline: "Chronik",
     freetime: "Freizeit",
     competition: "Wettbewerbsordnung",

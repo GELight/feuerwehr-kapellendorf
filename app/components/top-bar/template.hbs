@@ -1,0 +1,9 @@
+<div class="topbar">
+	<div class="container">
+        <span class="emergency-call">{{t "emergency.call"}}</span>
+        {{#link-to 'index'}}
+            <span class="title">{{t "application.brand.title"}}</span> <span class="city">{{t "application.brand.city"}}</span>
+        {{/link-to}}
+        {{yield}}
+	</div>
+</div>

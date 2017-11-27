@@ -25,12 +25,16 @@ Router.map(function() {
       this.route('freetime');
     });
   });
+  this.route('competition');
+  this.route('statute');
   this.route('honor');
+
   this.route('imprint');
   this.route('disclaimer');
   this.route('dataprotection');
-  this.route('competition');
-  this.route('statute');
+  this.route('fireequipment');
+  this.route('members');
+  this.route('publicrelation');
 });
 
 export default Router;

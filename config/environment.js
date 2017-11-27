@@ -20,7 +20,7 @@ module.exports = function(environment) {
 
     googleFonts: [
       'Open+Sans:300,400,700',
-      'Asap+Condensed:100,400,700'
+      'Montserrat:100,400,700'
     ],
 
     // Set or update content security policies
