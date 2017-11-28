@@ -1,0 +1,23 @@
+<footer>
+    <div class="footer-links">
+        <div class="container d-flex justify-content-center">
+            {{#each footerNavigation as |item|}}
+				{{#link-to item.link class="btn- btn-link"}}
+					{{t item.localization}}
+				{{/link-to}}
+			{{/each}}
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container d-flex justify-content-center">
+            {{t "footer.copyright" copyrightTo=copyrightTo brand=(t 'application.brand.title') city=(t 'application.brand.city')}}
+        </div>
+    </div>
+    <div class="footer-arr">
+        <div class="container d-flex justify-content-center">
+            {{t 'footer.arr'}}
+        </div>
+    </div>
+</footer>
+
+{{yield}}

@@ -52,6 +52,26 @@ export default Ember.Route.extend(ResetScrollMixin, {
           active: false
         }
       ],
+      footerNavigation: [
+        {
+          ico: "",
+          localization: "footer.imprint",
+          link: "imprint",
+          active: false
+        },
+        {
+          ico: "",
+          localization: "footer.dataprotection",
+          link: "dataprotection",
+          active: false
+        },
+        {
+          ico: "",
+          localization: "footer.disclaimer",
+          link: "disclaimer",
+          active: false
+        }
+      ],
       copyrightTo: new Date().getFullYear()
     });
 

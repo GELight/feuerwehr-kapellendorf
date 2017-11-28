@@ -3,8 +3,7 @@ export default {
     brand: {
       city: "Kapellendorf",
       title: "Freiwillige Feuerwehr"
-    },
-    together: "Gemeinsam für euch!"
+    }
   },
   navigation: {
     welcome: "Willkommen",
@@ -12,22 +11,11 @@ export default {
     operation: "Einsätze",
     fireequipment: "Feuerlöschwesen",
     members: "Mitglieder",
-    publicrelation: "Öffentlichkeitsarbeit",
-    
-    honor: "Ehrenabteilung",
-    youth: "Jugendfeuerwehr",
-    education: "Ausbildung",
-    childfirebrigade: "Kinderfeuerwehr",
-    timetable: "Dienstplan",
-    technology: "Technik",
-    timeline: "Chronik",
-    freetime: "Freizeit",
-    competition: "Wettbewerbsordnung",
-    grouprelay: "Gruppenstafette",
-    statute: "Satzung"
+    publicrelation: "Öffentlichkeitsarbeit"
   },
   footer: {
-    copyright: "&copy; 2016 - {{copyrightTo}} | {{brand}}",
+    copyright: "&copy; 2017 - {{copyrightTo}} - {{brand}} - {{city}}",
+    arr: "All rights reserved.",
     imprint: "Impressum",
     dataprotection: "Datenschutz",
     disclaimer: "Haftungsausschluss"

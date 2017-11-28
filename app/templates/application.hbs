@@ -20,44 +20,6 @@
 <div class="application-content">
 	{{outlet}}
 </div>
-
-<footer class="footer">
-
-	<div class="content">
-		<div class="container text-center">
-
-			<div class="nav">
-				{{#each model.navigation as |item|}}
-					{{#link-to item.link class="btn btn-link"}}
-						{{t item.localization}}
-					{{/link-to}}
-				{{/each}}
-			</div>
-
-			<div class="text-together">
-				{{t "application.together"}}
-			</div>
-
-			<div class="nav">
-				{{#link-to "imprint" class="btn btn-link"}}
-					{{t "footer.imprint"}}
-				{{/link-to}}
-				{{#link-to "dataprotection" class="btn btn-link"}}
-					{{t "footer.dataprotection"}}
-				{{/link-to}}
-				{{#link-to "disclaimer" class="btn btn-link"}}
-					{{t "footer.disclaimer"}}
-				{{/link-to}}
-			</div>
-
-		</div>
-	</div>
-
-	<div class="copyright">
-		<div class="container text-center">
-			{{t "footer.copyright" copyrightTo=model.copyrightTo brand=(t 'application.brand.long')}}
-		</div>
-	</div>
-
-</footer>
 --}}
+
+{{application-footer copyrightTo=model.copyrightTo footerNavigation=model.footerNavigation}}
