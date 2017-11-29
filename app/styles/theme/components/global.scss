@@ -27,6 +27,7 @@ body {
 		background-image: url('/img/body.png');
 		background-position: top center;
 		z-index: 1;
+		overflow: auto;
 	}
 }
 
@@ -43,8 +44,12 @@ a {
 }
 
 h2 {
-
+	font-size: $h2-font-size;
 	margin-bottom: $space-default * 2;
+}
+h4 {
+	font-size: $h4-font-size;
+	margin-top: $space-default * 2;
 }
 
 @include media-breakpoint-down(md) {

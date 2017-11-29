@@ -3,20 +3,13 @@
 // Card
 
 .card {
-	background-color: darken($body-bg, $color-offset-default / 4);
-	margin-bottom: $space-default * 4;
-
+	background-color: darken($body-bg, 100%);
+	margin-bottom: $space-default * 2;
+	padding: 3em 2em 1em 2em;
+	background: rgba(0, 0, 0, .3);
+	
 	.fa {
 		margin-right: $space-default;
 	}
-
-	&.current-month {
-
-		.card-block {
-			background-color: darken($card-cap-bg, $color-offset-default * 10);
-			color: lighten($text-color-default, 100%);
-		}
-
-	}
-
+	
 }
