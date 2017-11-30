@@ -1,0 +1,76 @@
+{
+    "navigation": [
+        {
+            "id": 1,
+            "ico": "home",
+            "localization": "navigation.welcome",
+            "link": "index",
+            "active": true,
+            "type": "main"
+        },
+        {
+            "id": 2,
+            "ico": "",
+            "localization": "navigation.association",
+            "link": "association",
+            "active": false,
+            "type": "main"
+        },
+        {
+            "id": 3,
+            "ico": "",
+            "localization": "navigation.fireequipment",
+            "link": "fireequipment",
+            "active": false,
+            "type": "main"
+        },
+        {
+            "id": 4,
+            "ico": "",
+            "localization": "navigation.members",
+            "link": "members",
+            "active": false,
+            "type": "main"
+        },
+        {
+            "id": 5,
+            "ico": "",
+            "localization": "navigation.operation",
+            "link": "operation",
+            "active": false,
+            "type": "main"
+        },
+        {
+            "id": 6,
+            "ico": "",
+            "localization": "navigation.publicrelation",
+            "link": "publicrelation",
+            "active": false,
+            "type": "main"
+        },
+        {
+            "id": 7,
+            "ico": "",
+            "localization": "footer.imprint",
+            "link": "imprint",
+            "active": false,
+            "type": "footer"
+        },
+        {
+            "id": 8,
+            "ico": "",
+            "localization": "footer.dataprotection",
+            "link": "dataprotection",
+            "active": false,
+            "type": "footer"
+        },
+        {
+            "id": 9,
+            "ico": "",
+            "localization": "footer.disclaimer",
+            "link": "disclaimer",
+            "active": false,
+            "type": "footer"
+        }
+    ]
+}

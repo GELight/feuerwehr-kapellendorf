@@ -19,8 +19,8 @@ module.exports = function(environment) {
     },
 
     googleFonts: [
-      'Open+Sans:300,400,700',
-      'PT+Sans:100,400,700'
+      // 'Open+Sans:100,300,400,700',
+      'Exo:100,300,400,700'
     ],
 
     // Set or update content security policies

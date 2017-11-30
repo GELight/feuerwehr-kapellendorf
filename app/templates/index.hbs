@@ -1,6 +1,40 @@
-{{ui-slick slides=model.headerSlides}}
+<section class="container">
 
-<section>
+<div class="row d-flex">
+	<div class="col-md-6">
+		<div class="card">
+			<div class="card-block">
+				<h3 class="card-title">{{t 'general.links'}}</h3>
+				<div class="card-text">
+					<div class="list">
+						{{#each model.navigation as |item|}}
+							{{#link-to item.link class="list-links"}}
+								{{t item.localization}}
+							{{/link-to}}
+						{{/each}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="card">
+			<div class="card-block">
+				<h3 class="card-title">{{t 'general.news'}}</h3>
+				<div class="card-text">
+					{{#each model.lastNews as |item|}}
+						<p>
+							<strong>{{item.title}}</strong><br/>
+							<i>{{item.description}}</i>
+						</p>
+					{{/each}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	{{!--
 	<div class="container">
 		<div class="row d-flex">
 			<div class="col-md-6">
@@ -35,6 +69,7 @@
 			</div>
 		</div>
 	</div>
+	--}}
 </section>
 
 <section class="highlight events">

@@ -1,0 +1,18 @@
+//
+// List
+
+.list {
+
+    .list-links {
+        margin-bottom: 2px;
+        padding: 1em;
+        background: rgba(0, 0, 0, .3);
+        display: block;
+
+        &:hover {
+            background: rgba(0, 0, 0, .6);
+            text-decoration: none;
+        }
+    }
+
+}

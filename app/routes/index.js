@@ -3,34 +3,15 @@ import Ember from 'ember';
 export default Ember.Route.extend({
 
   model() {
+
     return Ember.RSVP.hash({
-      headerSlides: [
-        {
-          img: '/img/main-1.jpg',
-          headline: 'Sei dabei!',
-          text: 'Mach mit im Förderverein der freiwilligen Feuerwehr Erfurt-Molsdorf.'
-        },
-        {
-          img: '/img/main-2.jpg',
-          headline: 'Unsere Jugend',
-          text: 'Lerne alles rund um die Feuerwehr.'
-        },
-        {
-          img: '/img/main-3.jpg',
-          headline: 'Ehrenabteilung',
-          text: 'Einen wehrtvoller Beitrag leisten.'
-        },
-        {
-          img: '/img/main-4.jpg',
-          headline: 'Einsatzabteilung',
-          text: 'Gemeinsam für euch.'
-        }
-      ],
-      news: this.get('store').findAll('news').then((news) => {
-        // return news.get('firstObject');
-        return news;
-      })
+      news: this.get('store').findAll('news'),
+      navigation: this.get('store').findAll('navigation').then((nav) => {
+        return nav.filter((nav) => nav.get('type') === 'main');
+      }),
+      lastNews: this.get('store').findAll('news')
     });
+
   }
 
 });

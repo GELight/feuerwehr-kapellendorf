@@ -30,7 +30,9 @@ export default {
     honorarydepartment: "Ehrenabteilung"
   },
   general: {
-    details: "Mehr erfahren »"
+    details: "Mehr erfahren »",
+    links: "Links",
+    news: "Neuigkeiten"
   },
   challenges: {
     place: '. Platz',

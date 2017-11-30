@@ -9,69 +9,12 @@ export default Ember.Route.extend(ResetScrollMixin, {
   model() {
 
     return Ember.RSVP.hash({
-      navigation: [{
-          ico: "home",
-          localization: "navigation.welcome",
-          link: "index",
-          active: true
-        },
-        {
-          ico: "group",
-          localization: "navigation.association",
-          link: "association",
-          active: false
-        },
-        {
-          ico: "group",
-          localization: "navigation.fireequipment",
-          link: "fireequipment",
-          active: false
-        },
-        {
-          ico: "group",
-          localization: "navigation.members",
-          link: "members",
-          active: false
-        },
-        {
-          ico: "group",
-          localization: "navigation.operation",
-          link: "operation",
-          active: false
-        },
-        {
-          ico: "group",
-          localization: "navigation.publicrelation",
-          link: "publicrelation",
-          active: false
-        },
-        {
-          ico: "group",
-          localization: "application.brand.city",
-          link: "index",
-          active: false
-        }
-      ],
-      footerNavigation: [
-        {
-          ico: "",
-          localization: "footer.imprint",
-          link: "imprint",
-          active: false
-        },
-        {
-          ico: "",
-          localization: "footer.dataprotection",
-          link: "dataprotection",
-          active: false
-        },
-        {
-          ico: "",
-          localization: "footer.disclaimer",
-          link: "disclaimer",
-          active: false
-        }
-      ],
+      navigation: this.get('store').findAll('navigation').then((nav) => {
+        return nav.filter((nav) => nav.get('type') === 'main');
+      }),
+      footerNavigation: this.get('store').findAll('navigation').then((nav) => {
+        return nav.filter((nav) => nav.get('type') === 'footer');
+      }),
       copyrightTo: new Date().getFullYear()
     });
 
