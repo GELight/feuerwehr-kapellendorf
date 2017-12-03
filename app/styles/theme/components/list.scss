@@ -8,10 +8,13 @@
         padding: 1em;
         background: rgba(0, 0, 0, .3);
         display: block;
+        border-top: 1px solid transparent;
 
         &:hover {
             background: rgba(0, 0, 0, .6);
             text-decoration: none;
+            border-top: 1px solid $color-highlighted;
+            color: $color-highlighted;
         }
     }
 

@@ -6,19 +6,47 @@ export default {
     }
   },
   navigation: {
-    welcome: "Willkommen",
-    association: "Verein",
-    operation: "Einsätze",
-    fireequipment: "Feuerlöschwesen",
-    members: "Mitglieder",
-    publicrelation: "Öffentlichkeitsarbeit"
+    welcome: {
+      title: "Willkommen",
+      description: "",
+      text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    },
+    association: {
+      title: "Verein",
+      description: "Lust auf ein außergewöhnliches Hobby?<br/>Hier kann sich jeder einbringen, der Spaß daran hat, zu helfen."
+    },
+    operation: {
+      title: "Einsätze",
+      description: "Welche Einsätze gab es denn schon?"
+    },
+    fireequipment: {
+      title: "Feuerlöschwesen",
+      description: "Was du schon immer über das Löschwesen in Kapellendorf wissen wolltest."
+    },
+    members: {
+      title: "Mitglieder",
+      description: "Was sind das für coole Typen?"
+    },
+    publicrelation: {
+      title: "Öffentlichkeitsarbeit",
+      description: "Wie stehen wir in der Öffentlichkeit und was tuen wir da?"
+    }
   },
   footer: {
     copyright: "&copy; 2017 - {{copyrightTo}} - {{brand}} - {{city}}",
     arr: "All rights reserved.",
-    imprint: "Impressum",
-    dataprotection: "Datenschutz",
-    disclaimer: "Haftungsausschluss"
+    imprint: {
+      title: "Impressum",
+      description: "",
+    },
+    dataprotection: {
+      title: "Datenschutz",
+      description: ""
+    },
+    disclaimer: {
+      title: "Haftungsausschluss",
+      description: ""
+    }
   },
   emergency: {
     call: "Notruf 112"
@@ -31,7 +59,7 @@ export default {
   },
   general: {
     details: "Mehr erfahren »",
-    links: "Links",
+    links: "Neugierig?",
     news: "Neuigkeiten"
   },
   challenges: {

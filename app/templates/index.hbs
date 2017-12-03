@@ -1,92 +1,46 @@
-<section class="container">
-
-<div class="row d-flex">
-	<div class="col-md-6">
-		<div class="card">
-			<div class="card-block">
-				<h3 class="card-title">{{t 'general.links'}}</h3>
-				<div class="card-text">
-					<div class="list">
-						{{#each model.navigation as |item|}}
-							{{#link-to item.link class="list-links"}}
-								{{t item.localization}}
-							{{/link-to}}
-						{{/each}}
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="col-md-6">
-		<div class="card">
-			<div class="card-block">
-				<h3 class="card-title">{{t 'general.news'}}</h3>
-				<div class="card-text">
-					{{#each model.lastNews as |item|}}
-						<p>
-							<strong>{{item.title}}</strong><br/>
-							<i>{{item.description}}</i>
-						</p>
-					{{/each}}
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-	{{!--
-	<div class="container">
-		<div class="row d-flex">
-			<div class="col-md-6">
-				<h3>Förderverein</h3>
-				<p>Lust auf ein außergewöhnliches Hobby?<br/>Hier kann sich jeder einbringen, der Spaß daran hat, zu helfen.</p>
-				{{#link-to "association" class="btn btn-secondary"}}
-					{{t 'general.details'}}
-				{{/link-to}}
-			</div>
-			<div class="col-md-6">
-				<h3>Jugendfeuerwehr</h3>
-				<p>Wie gehe ich mir Feuer um? Wie geht ein richtiger Notruf?<br/>Hier lernt Ihr alles rund um die Feuerwehr.</p>
-				{{#link-to "youth" class="btn btn-secondary"}}
-					{{t 'general.details'}}
-				{{/link-to}}
-			</div>
-		</div>
-		<div class="row d-flex">
-			<div class="col-md-6">
-				<h3>Einsatzabteilung</h3>
-				<p>Wer hilf bei Feuer, Hochwasser und ist da in der Not?<br/>Die Kameraden der freiwilligen Feuerwehr.</p>
-				{{#link-to "operation" class="btn btn-secondary"}}
-					{{t 'general.details'}}
-				{{/link-to}}
-			</div>
-			<div class="col-md-6">
-				<h3>Ehrenabteilung</h3>
-				<p>Eine Frage des Alters? Nein!<br/>Die Alters- und Ehrenabteilung leistet einen wichtigen Beitrag.</p>
-				{{#link-to "honor" class="btn btn-secondary"}}
-					{{t 'general.details'}}
-				{{/link-to}}
-			</div>
-		</div>
-	</div>
-	--}}
+<section class="container welcomes">
+  {{#each model.welcomes as |item|}}
+    <h2>{{t item.title}}</h2>
+    <p>{{t item.text}}</p>
+  {{/each}}
 </section>
 
-<section class="highlight events">
-	<div class="container">
-		{{#each model.news as |news|}}
-			<div class="row event">
-				<div class="col-md-1">
-					<p class="date">{{news.day}}</p>
-					<p class="month">{{news.month}}</p>
-				</div>
-				<div class="col-md-11">
-					<h2>{{news.title}}</h2>
-					<p>{{news.description}}</p>
-				</div>
-			</div>
-		{{/each}}
-	</div>
+<section class="container">
+
+  <div class="row d-flex">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">{{t 'general.links'}}</h3>
+          <div class="card-text">
+            <div class="list">
+              {{#each model.navigation as |item|}}
+                {{#link-to item.link class="list-links"}}
+                  {{t item.description}}
+                {{/link-to}}
+              {{/each}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">{{t 'general.news'}}</h3>
+          <div class="card-text">
+            {{#each model.lastNews as |item|}}
+              <p>
+                <strong>{{item.title}}</strong><br/>
+                <i>{{item.description}}</i>
+              </p>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 {{outlet}}

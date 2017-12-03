@@ -1,0 +1,9 @@
+{
+    "welcomes": [
+        {
+            "id": 1,
+            "title": "navigation.welcome.title",
+            "text": "navigation.welcome.text"
+        }
+    ]
+}

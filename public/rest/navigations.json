@@ -3,7 +3,8 @@
         {
             "id": 1,
             "ico": "home",
-            "localization": "navigation.welcome",
+            "title": "navigation.welcome.title",
+            "description": "navigation.welcome.description",
             "link": "index",
             "active": true,
             "type": "main"
@@ -11,7 +12,8 @@
         {
             "id": 2,
             "ico": "",
-            "localization": "navigation.association",
+            "title": "navigation.association.title",
+            "description": "navigation.association.description",
             "link": "association",
             "active": false,
             "type": "main"
@@ -19,7 +21,8 @@
         {
             "id": 3,
             "ico": "",
-            "localization": "navigation.fireequipment",
+            "title": "navigation.fireequipment.title",
+            "description": "navigation.fireequipment.description",
             "link": "fireequipment",
             "active": false,
             "type": "main"
@@ -27,7 +30,8 @@
         {
             "id": 4,
             "ico": "",
-            "localization": "navigation.members",
+            "title": "navigation.members.title",
+            "description": "navigation.members.description",
             "link": "members",
             "active": false,
             "type": "main"
@@ -35,7 +39,8 @@
         {
             "id": 5,
             "ico": "",
-            "localization": "navigation.operation",
+            "title": "navigation.operation.title",
+            "description": "navigation.operation.description",
             "link": "operation",
             "active": false,
             "type": "main"
@@ -43,7 +48,8 @@
         {
             "id": 6,
             "ico": "",
-            "localization": "navigation.publicrelation",
+            "title": "navigation.publicrelation.title",
+            "description": "navigation.publicrelation.description",
             "link": "publicrelation",
             "active": false,
             "type": "main"
@@ -51,7 +57,8 @@
         {
             "id": 7,
             "ico": "",
-            "localization": "footer.imprint",
+            "title": "footer.imprint.title",
+            "description": "navigation.imprint.description",
             "link": "imprint",
             "active": false,
             "type": "footer"
@@ -59,7 +66,8 @@
         {
             "id": 8,
             "ico": "",
-            "localization": "footer.dataprotection",
+            "title": "footer.dataprotection.title",
+            "description": "navigation.dataprotection.description",
             "link": "dataprotection",
             "active": false,
             "type": "footer"
@@ -67,7 +75,8 @@
         {
             "id": 9,
             "ico": "",
-            "localization": "footer.disclaimer",
+            "title": "footer.disclaimer.title",
+            "description": "navigation.disclaimer.description",
             "link": "disclaimer",
             "active": false,
             "type": "footer"

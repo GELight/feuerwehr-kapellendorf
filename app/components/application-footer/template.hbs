@@ -3,7 +3,7 @@
         <div class="container d-flex justify-content-center">
             {{#each footerNavigation as |item|}}
 				{{#link-to item.link class="btn- btn-link"}}
-					{{t item.localization}}
+					{{t item.title}}
 				{{/link-to}}
 			{{/each}}
         </div>
