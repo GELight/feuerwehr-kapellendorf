@@ -15,7 +15,7 @@
           <div class="card-text">
             <div class="list">
               {{#each model.navigation as |item|}}
-                {{#link-to item.link class="list-links"}}
+                {{#link-to item.link class="list-item list-link"}}
                   {{t item.description}}
                 {{/link-to}}
               {{/each}}

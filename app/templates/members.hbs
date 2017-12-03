@@ -1,1 +1,75 @@
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="card">
+					<h3 class="card-title">Wehrausschuss</h3>
+					<div class="card-block">
+						<div class="list">
+							{{#each model.commiteeMembers as |operationalTypesList|}}
+								{{#each operationalTypesList as |item|}}
+									<div class="list-item">
+										<strong>{{item.member.firstName}} {{item.member.lastName}}</strong> - {{t item.job}}
+									</div>
+								{{/each}}
+							{{/each}}
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container text-center">
+		<p>
+			<strong>AGT</strong> - {{t 'agt'}}
+		</p>
+		<p>
+			<strong>MA</strong> - {{t 'ma'}}
+		</p>
+		<p>
+			<strong>KSF</strong> - {{t 'ksf'}}
+		</p>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-title">Mitglieder ({{model.operationalMembersCount}})</div>
+					<div class="list">
+
+						{{#each model.operationalMembers as |member|}}
+							<div class="list-item justify-content-between">
+								<p>
+									<strong>{{member.firstName}} {{member.lastName}}</strong>
+									{{#each member.operationsDepartment.member as |item|}}
+										- {{t item.job}}
+									{{/each}}
+								</p>
+								<div class="align-self-end">
+									{{#each member.operationsDepartment.operationalTasks as |topic|}}
+										<span class="badge badge-{{if topic.active 'default' 'warning'}} text-uppercase" title="{{t topic.name}}">
+											{{topic.name}}{{#if topic.active}}{{else}} ( <small>{{t 'currentlyNotApplicable'}}</small> ){{/if}}
+										</span>
+									{{/each}}
+								</div>
+							</div>
+						{{/each}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 {{outlet}}
+
+<section></section>

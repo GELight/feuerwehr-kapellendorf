@@ -30,7 +30,8 @@ export default {
     publicrelation: {
       title: "Öffentlichkeitsarbeit",
       description: "Wie stehen wir in der Öffentlichkeit und was tuen wir da?"
-    }
+    },
+    statute: "Satzung"
   },
   footer: {
     copyright: "&copy; 2017 - {{copyrightTo}} - {{brand}} - {{city}}",
