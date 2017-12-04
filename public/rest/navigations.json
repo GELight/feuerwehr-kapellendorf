@@ -46,16 +46,7 @@
             "type": "main"
         },
         {
-            "id": 6,
-            "ico": "",
-            "title": "navigation.publicrelation.title",
-            "description": "navigation.publicrelation.description",
-            "link": "publicrelation",
-            "active": false,
-            "type": "main"
-        },
-        {
-            "id": 7,
+            "id": 100,
             "ico": "",
             "title": "footer.imprint.title",
             "description": "navigation.imprint.description",
@@ -64,7 +55,7 @@
             "type": "footer"
         },
         {
-            "id": 8,
+            "id": 110,
             "ico": "",
             "title": "footer.dataprotection.title",
             "description": "navigation.dataprotection.description",
@@ -73,7 +64,7 @@
             "type": "footer"
         },
         {
-            "id": 9,
+            "id": 120,
             "ico": "",
             "title": "footer.disclaimer.title",
             "description": "navigation.disclaimer.description",
