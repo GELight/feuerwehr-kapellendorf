@@ -4,18 +4,6 @@ export default Ember.Route.extend({
 
   model() {
     return Ember.RSVP.hash({
-      timetable: this.get('store').findAll('operation-timetable').then((data) => {
-        let date = new Date();
-        let month = date.getMonth();
-
-        data.forEach(function(element) {
-          if (parseInt(element.get('id')) === month) {
-            element.set('currentMonth', true);
-          }
-        });
-
-        return data;
-      }),
       operationalMembers: this.get('store').findAll('member').then((members) => {
         return members.filter(function(member/*, index, array*/) {
           if (member.get('operationsDepartment.member')) {
