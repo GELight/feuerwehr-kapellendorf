@@ -1,0 +1,48 @@
+<section>
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-md-4">
+
+                <div class="card">
+                    <div class="card-block">
+                        <h3 class="card-title">{{t 'navigation.honor.title'}}</h3>
+                        <div class="card-text">
+                            <p>Die Alters- und Ehrenabteilung der FF EF-Molsdorf umfasst derzeit {{model.members.length}} Mitglieder.</p>
+                            <ul>
+                                {{#each model.members as |member|}}
+                                    <li>
+                                        {{member.lastName}} {{member.firstName}}
+                                    </li>
+                                {{else}}
+                                    <li>
+                                        Aktuell sind keine Mitglieder in unserer Ehrenabteilung.
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+			</div>
+
+			<div class="col-md-8">
+
+                <div class="card">
+                    <div class="card-block">
+                        <h3 class="card-title">Öffentlichkeitsarbeit</h3>
+                        <div class="card-text">
+                            <p>Mit regem Interesse wird die Entwicklung der gesamten Wehr verfolgt. Vielen der heutigen Mitglieder sind die Anfänge mit einer Tragkraftspritze TS 8, dem Kleinlöschfahrzeug B 1000 und dem Tanker S 4000 aus ihrer aktiven Zeit in guter Erinnerung.</p>
+                            <p>Im Rahmen ihrer Möglichkeiten leisten sie bei Öffentlichkeitsveranstaltungen, wie dem Osterfeuer oder dem Weihnachtsmarkt einen wertvollen Beitrag.</p>
+                            <p>Zu einer schönen Tradition sind auch die Busfahrten geworden, welche vom Stadtfeuerwehrverband in Verbindung mit dem Amt für Brandschutz, Rettungsdienst und Katastrophenschutz organisierten werden. Auf diese Weise wurden schon einige interessante Ausflüge unternommen, wie z.B. die Besichtigung der Flughafenfeuerwehr in Frankfurt(M), Mainz mit Besichtigung der ZDF Studios sowie der Edersee und Kloster Walkenried. Weiterhin wird jährlich eine gemeinsame Weihnachtsfeier durchgeführt.</p>
+                        </div>
+                    </div>
+                </div>
+                
+			</div>
+		</div>
+
+	</div>
+</section>
+
+{{outlet}}

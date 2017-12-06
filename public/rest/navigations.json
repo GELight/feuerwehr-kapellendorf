@@ -2,7 +2,6 @@
     "navigation": [
         {
             "id": 1,
-            "ico": "home",
             "title": "navigation.welcome.title",
             "description": "navigation.welcome.description",
             "link": "index",
@@ -11,7 +10,6 @@
         },
         {
             "id": 2,
-            "ico": "",
             "title": "navigation.association.title",
             "description": "navigation.association.description",
             "link": "association",
@@ -20,25 +18,6 @@
         },
         {
             "id": 3,
-            "ico": "",
-            "title": "navigation.fireequipment.title",
-            "description": "navigation.fireequipment.description",
-            "link": "fireequipment",
-            "active": false,
-            "type": "main"
-        },
-        {
-            "id": 4,
-            "ico": "",
-            "title": "navigation.members.title",
-            "description": "navigation.members.description",
-            "link": "members",
-            "active": false,
-            "type": "main"
-        },
-        {
-            "id": 5,
-            "ico": "",
             "title": "navigation.operation.title",
             "description": "navigation.operation.description",
             "link": "operation",
@@ -46,8 +25,23 @@
             "type": "main"
         },
         {
+            "id": 4,
+            "title": "navigation.youth.title",
+            "description": "navigation.youth.description",
+            "link": "youth",
+            "active": false,
+            "type": "main"
+        },
+        {
+            "id": 5,
+            "title": "navigation.honor.title",
+            "description": "navigation.honor.description",
+            "link": "honor",
+            "active": false,
+            "type": "main"
+        },
+        {
             "id": 100,
-            "ico": "",
             "title": "footer.imprint.title",
             "description": "navigation.imprint.description",
             "link": "imprint",
@@ -56,7 +50,6 @@
         },
         {
             "id": 110,
-            "ico": "",
             "title": "footer.dataprotection.title",
             "description": "navigation.dataprotection.description",
             "link": "dataprotection",
@@ -65,7 +58,6 @@
         },
         {
             "id": 120,
-            "ico": "",
             "title": "footer.disclaimer.title",
             "description": "navigation.disclaimer.description",
             "link": "disclaimer",

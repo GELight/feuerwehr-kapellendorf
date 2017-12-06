@@ -1,29 +1,23 @@
 <section>
 	<div class="container">
-
-    <div class="card">
-      <div class="card-block">
-        <h3 class="card-title">
-          {{t 'navigation.operation.title'}}
-        </h3>
-        <div class="card-text">
-
-          <div class="list">
-            {{#each model.operations as |operation|}}
-              <div class="list-item">
-                {{operation.year}} - <strong>{{operation.title}}</strong>
-              </div>
-            {{/each}}
-          </div>
-
-        </div>
-      </div>
-    </div>
-
+		<div class="nav nav-pills nav-fill" role="tablist">
+		  <div class="nav-item">
+				{{#link-to "operation.technology" class="nav-link"}}
+					{{t "navigation.operation.technology.title"}}
+				{{/link-to}}
+		  </div>
+		  <div class="nav-item">
+				{{#link-to "operation.members" class="nav-link"}}
+					{{t "navigation.operation.members.title"}}
+				{{/link-to}}
+		  </div>
+			<div class="nav-item">
+				{{#link-to "operation.history" class="nav-link"}}
+					{{t "navigation.operation.history.title"}}
+				{{/link-to}}
+		  </div>
+		</div>
 	</div>
 </section>
 
 {{outlet}}
-
-<section></section>
-

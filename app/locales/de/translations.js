@@ -8,28 +8,35 @@ export default {
   navigation: {
     welcome: {
       title: "Willkommen",
-      description: "",
-      text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+      description: ""
     },
     association: {
       title: "Verein",
       description: "Lust auf ein außergewöhnliches Hobby?<br/>Hier kann sich jeder einbringen, der Spaß daran hat, zu helfen."
     },
     operation: {
-      title: "Einsätze",
-      description: "Welche Einsätze gab es denn schon?"
+      title: "Einsatzabteilung",
+      description: "Was ist die Einsatzabteilung und wer gehört ihr an?",
+      technology: {
+        title: "Technik",
+        description: ""
+      },
+      members: {
+        title: "Mitglieder",
+        description: "Was sind das für coole Typen?"
+      },
+      history: {
+        title: "Einsätze",
+        description: ""
+      }
     },
-    fireequipment: {
-      title: "Feuerlöschwesen",
-      description: "Was du schon immer über das Löschwesen in Kapellendorf wissen wolltest."
+    youth: {
+      title: "Jugendfeuerwehr",
+      description: "Wie gehe ich mit Feuer um? Wie geht ein richtiger Notruf? Hier lernt Ihr alles rund um die Feuerwehr."
     },
-    members: {
-      title: "Mitglieder",
-      description: "Was sind das für coole Typen?"
-    },
-    publicrelation: {
-      title: "Öffentlichkeitsarbeit",
-      description: "Wie stehen wir in der Öffentlichkeit und was tuen wir da?"
+    honor: {
+      title: "Ehrenabteilung",
+      description: "Die Alters- und Ehrenabteilung der Freiwilligen Feuerwehr Kapellendorf"
     },
     statute: "Satzung"
   },
@@ -51,12 +58,6 @@ export default {
   },
   emergency: {
     call: "Notruf 112"
-  },
-  routes: {
-    association: "verein",
-    department: "einsatzabteilung",
-    youthfiredepartment: "jugendfeuerwehr",
-    honorarydepartment: "Ehrenabteilung"
   },
   general: {
     details: "Mehr erfahren »",

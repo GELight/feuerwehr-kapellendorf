@@ -20,7 +20,7 @@ module.exports = function(environment) {
 
     googleFonts: [
       // 'Open+Sans:100,300,400,700',
-      'Exo:100,300,400,700'
+      'Exo+2:100,300,400,700'
     ],
 
     // Set or update content security policies
