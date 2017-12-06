@@ -1,1 +1,22 @@
+<section>
+	<div class="container">
+        
+        <div class="card">
+            <div class="card-block">
+                <h3 class="card-title">{{t 'navigation.operation.history.title'}}</h3>
+                <div class="card-text">
+                    <div class="list">
+                        {{#each model.operations as |operation|}}
+                            <div class="list-item">
+                                <strong>{{operation.year}}</strong> - {{operation.title}}
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+	</div>
+</section>
+
 {{outlet}}
