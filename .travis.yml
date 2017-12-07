@@ -1,3 +1,4 @@
+sudo: true
 language: node_js
 node_js:
   - '7'
@@ -14,7 +15,7 @@ deploy:
   local_dir: dist/
   provider: pages
   skip_cleanup: true
-  repo: feuerwehr-kapellendorf/feuerwehr-kapellendorf.github.io.git
+  repo: feuerwehr-kapellendorf/feuerwehr-kapellendorf.github.io
   target_branch: master
   github_token: "$GITHUB_TOKEN"
   on:
