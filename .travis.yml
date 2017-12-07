@@ -1,12 +1,12 @@
 language: node_js
 node_js:
-- '7'
+  - '7'
 before_script:
   - npm install -g bower
 script:
-- bower install
-- npm install
-- ember build --environment=production
+  - bower install
+  - npm install
+  - ember build --environment=production
 cache:
   directories:
     - node_modules
@@ -14,11 +14,11 @@ deploy:
   local_dir: dist/
   provider: pages
   skip_cleanup: true
-  repo: feuerwehr-kapellendorf/feuerwehr-kapellendorf.github.io
+  repo: feuerwehr-kapellendorf/feuerwehr-kapellendorf.github.io.git
   target_branch: master
   github_token: "$GITHUB_TOKEN"
   on:
     branch: master
 env:
   global:
-  - secure: mkkAPg2gXt1O53CWyJbFYdLB1Lxkoh4bmv9gQHsffBJUZMhFN6XqtbXtpdWiWWTI5fL2MehJ4RwkUnEIJGCFM3T+Lo5oVfdiQVAZ4ofp7CUeNtdDlVPdVUBluOBfcUj30dmWYRoOrvniTjYGdZWr4dS7zPeSNRH2SxPLuSHi4PNcyAmynE+ve/GtKY4YR0PYBY99yyxc6inWqyeDp+4xfdPZHLwsgbIvX/koIr8Wo+cpKVJWqWhJVs/sSyt9OtFnBwKPX18jx4F7YKVU7apbJvS1Yx9jYaNYVFZgICD4L8wsHiCcUGFy/mD81cI3AVsLsni6h7FvvBIKqf5ZdJOILDDhbGoXh/fcy8Di+tzEJyQWePxmZ+TlnQRTGj7O89rl4rBgxK2mP9jO4riMu5zJPFCEUae23pOy7mfEmiSvDHFGsEeMYgEzY5EI2wzoWx0PVmae1OMgLG9fxGpanmBtGYeBhBoay1iquiuipi3NNrYjTRlQBFi9oGGiJ6UDH6OWKlYG4FrByLznYz/wVothwN5/tQN9UyE5Zj3LhbXNnAvllGdsl4syFwj9lqik/iVfAxXh8j7Me2l40jK3PNMIAxDVKilOx2G3BoKsp7/XAoRGeErmKfE6vnLPUb3CWOyl2NJuFgqu2tczL4uGnFHFp0WMAA3ERFoxS3qbLBGuUD0=
+    - secure: mkkAPg2gXt1O53CWyJbFYdLB1Lxkoh4bmv9gQHsffBJUZMhFN6XqtbXtpdWiWWTI5fL2MehJ4RwkUnEIJGCFM3T+Lo5oVfdiQVAZ4ofp7CUeNtdDlVPdVUBluOBfcUj30dmWYRoOrvniTjYGdZWr4dS7zPeSNRH2SxPLuSHi4PNcyAmynE+ve/GtKY4YR0PYBY99yyxc6inWqyeDp+4xfdPZHLwsgbIvX/koIr8Wo+cpKVJWqWhJVs/sSyt9OtFnBwKPX18jx4F7YKVU7apbJvS1Yx9jYaNYVFZgICD4L8wsHiCcUGFy/mD81cI3AVsLsni6h7FvvBIKqf5ZdJOILDDhbGoXh/fcy8Di+tzEJyQWePxmZ+TlnQRTGj7O89rl4rBgxK2mP9jO4riMu5zJPFCEUae23pOy7mfEmiSvDHFGsEeMYgEzY5EI2wzoWx0PVmae1OMgLG9fxGpanmBtGYeBhBoay1iquiuipi3NNrYjTRlQBFi9oGGiJ6UDH6OWKlYG4FrByLznYz/wVothwN5/tQN9UyE5Zj3LhbXNnAvllGdsl4syFwj9lqik/iVfAxXh8j7Me2l40jK3PNMIAxDVKilOx2G3BoKsp7/XAoRGeErmKfE6vnLPUb3CWOyl2NJuFgqu2tczL4uGnFHFp0WMAA3ERFoxS3qbLBGuUD0=
