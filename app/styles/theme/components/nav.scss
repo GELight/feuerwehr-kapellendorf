@@ -6,6 +6,11 @@ nav {
 	margin-top: 90px;
   margin-bottom: 3em;
 
+  @include media-breakpoint-down(sm) {
+    margin-top: 50px;
+    margin-bottom: 1.5em;
+  }
+
   .nav-links {
     flex-direction: row;
 

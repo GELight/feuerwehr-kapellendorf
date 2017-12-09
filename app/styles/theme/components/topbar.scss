@@ -9,6 +9,10 @@
     line-height: 50px;
     font-size: 1.4em;
 
+    @include media-breakpoint-down(sm) {
+      font-size: 1em;
+    }
+
     .emergency-call {
         float: right;
         font-size: .8em;
