@@ -19,6 +19,3 @@ deploy:
   github_token: "$GITHUB_TOKEN"
   on:
     branch: master
-env:
-  global:
-    - secure:
