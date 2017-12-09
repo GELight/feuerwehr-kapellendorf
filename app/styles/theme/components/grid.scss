@@ -8,7 +8,7 @@
 	[class^="col"] ~ [class^="col"] {
 
 		@include media-breakpoint-down(sm) {
-			margin-top: $space-default * 6;
+			margin-top: $space-default * 2;
 		}
 
 	}

@@ -61,7 +61,7 @@ export default {
   },
   general: {
     details: "Mehr erfahren »",
-    links: "Neugierig?",
+    links: "Was interessiert dich?",
     news: "Neuigkeiten"
   },
   challenges: {
