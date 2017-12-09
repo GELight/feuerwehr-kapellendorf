@@ -4,7 +4,7 @@
 
 footer {
 	margin-bottom: 2em;
-	
+
 	.footer-links {
 		background: rgba(0, 0, 0, .6);
 		padding: 2em 0;
@@ -15,31 +15,32 @@ footer {
 			color: $text-color-default;
 			font-size: 1em;
 			padding: 0 .6em;
-	
+
 			&:hover {
 				color: $color-highlighted;
 				text-decoration: none;
 			}
-	
+
 			&:focus,
 			&.active {
 				text-decoration: none;
 				color: $text-color-default;
 				border-bottom: 1px solid $text-color-default;
 			}
-	
+
 		}
 
 	}
 
 	.footer-copyright {
 		margin-top: 1.2em;
-		font-size: 1.4em;
+    font-size: 1.4em;
+    text-align: center;
 	}
 
 	.footer-arr {
 		margin-top: 1em;
 		font-size: .9em;
 	}
-	
+
 }
