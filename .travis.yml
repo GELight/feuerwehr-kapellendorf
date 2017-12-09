@@ -21,4 +21,4 @@ deploy:
     branch: master
 env:
   global:
-    - secure: 945c18f63287adc25eecd62774a60e0149e7f356
+    - secure:
