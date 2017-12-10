@@ -1,10 +1,6 @@
 import Ember from 'ember';
-import ResetScrollMixin from 'ember-cli-reset-scroll';
 
-export default Ember.Route.extend(ResetScrollMixin, {
-
-  // Scroll to a specific position based on the route name (in px)
-  resetScroll: 10,
+export default Ember.Route.extend({
   
   model() {
 
