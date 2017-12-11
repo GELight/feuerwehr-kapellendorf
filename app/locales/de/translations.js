@@ -62,7 +62,9 @@ export default {
   general: {
     details: "Mehr erfahren »",
     links: "Was interessiert dich?",
-    news: "Neuigkeiten"
+    news: "Neuigkeiten",
+    purposeOfTheAssociation: "Zweck des Vereins",
+    membership: "Mitgliedschaft"
   },
   challenges: {
     place: '. Platz',

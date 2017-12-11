@@ -1,101 +1,121 @@
 <section>
 
 	<div class="container">
-    <div class="card">
-      <div class="card-text">
 
-        <div class="row">
-          <div class="col-md-6">
-            <h3>{{t 'navigation.association.title'}}</h3>
-            <div class="list">
-              {{#each model.members as |member|}}
-                <div class="list-item">
-                  {{t member.type}} - <strong>{{member.firstName}} {{member.lastName}}</strong>
-                </div>
-              {{/each}}
-            </div>
-          </div>
-          <div class="col-md-6">
-            <h3>Der Verein</h3>
-            <div class="list">
-              <div class="list-item">
-                Vereinssitz <strong><span class="text-nowrap">Graf-Gotter-Straße 21,</span> <span class="text-nowrap">99094 Erfurt-Molsdorf,</span> <span class="text-nowrap">+49(0) 3 62 02 - 49 97 55</span></strong>
-              </div>
-              <div class="list-item">
-                eingetragen bei	<strong>Amtsgericht Erfurt, Vereinsregister Nr. VR 162012</strong>
-              </div>
-              <div class="list-item">
-                Mitgliederzahl <strong>{{model.membership}}</strong>
-              </div>
-              <div class="list-item">
-                {{#link-to "statute" class="btn btn-primary"}}
-                  {{t 'navigation.statute'}}
-                {{/link-to}}
+      <div class="row">
+        <div class="col-md-6">
+
+          <div class="card">
+            <h3 class="card-title">{{t 'board'}}</h3>
+            <div class="card-text">
+              <div class="list">
+                {{#each model.members as |member|}}
+                  <div class="list-item">
+                    {{t member.type}} - <strong>{{member.firstName}} {{member.lastName}}</strong>
+                  </div>
+                {{/each}}
               </div>
             </div>
           </div>
+
         </div>
+        <div class="col-md-6">
 
-        <div class="row">
-          <div class="col-md-6">
-            <h3>Zweck des Vereins</h3>
-            <p>Der Förderverein hat die Aufgabe, den Feuerwehrgedanken nach den geltenden Gesetzen über den Brandschutz, die Allgemeine Hilfe und den Katastrophenschutz zu fördern. Diese Zielsetzung wird insbesondere verwirklicht durch:</p>
-            <div class="list">
-              <div class="list-item">
-                ideelle und materielle Unterstützung des Feuerwehrwesens im Ortsteil Erfurt-Molsdorf,
-              </div>
-              <div class="list-item">
-                die Wahrnehmung der Interessen der Feuerwehr und ihrer Angehörigen,
-              </div>
-              <div class="list-item">
-                die Betreuung der nicht mehr aktiv tätigen Feuerwehrleute,
-              </div>
-              <div class="list-item">
-                Beratung der Aufgabenträger in Fragen des Brandschutzes, der Allgemeinen Hilfe und des Katastrophenschutzes,
-              </div>
-              <div class="list-item">
-                Öffentlichkeitsarbeit und Anregungen aller Art.
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <h3>Mitgliedschaft</h3>
-            <p>Dem Förderverein können angehören:</p>
-            <div class="list">
-              <div class="list-item">
-                Feuerwehrangehörige
-                <ul>
-                  <li>
-                    nicht mehr aktiv tätige Feuerwehrleute
-                  </li>
-                  <li>
-                    Ehrenmitglieder
-                  </li>
-                  <li>
-                    fördernde Mitglieder und
-                  </li>
-                  <li>
-                    Mitglieder der Jugendfeuerwehr mit Bambini-Gruppe
-                  </li>
-                </ul>
-              </div>
-              <div class="list-item">
-                Nicht mehr aktiv tätige Feuerwehrleute sind solche Personen, die Feuerwehrangehörige gewesen sind und die Altersgrenze erreicht haben oder vorher auf eigenen Wunsch und ehrenhaft aus dem Dienst ausgeschieden sind.
-              </div>
-              <div class="list-item">
-                Ehrenmitglieder sind natürliche Personen, die sich besondere Verdienste um das Feuerwehrwesen erworben haben. Ehrenmitglieder werden auf Vorschlag des Vorstandes von der Mitgliederversammlung ernannt.
-              </div>
-              <div class="list-item">
-                Fördernde Mitglieder können unbescholtene natürliche oder juristische Personen sein, die durch ihren Beitritt ihre Verbundenheit mit der Feuerwehr bekunden wollen.
+          <div class="card">
+            <h3 class="card-title">{{t 'navigation.association.title'}}</h3>
+            <div class="card-text">
+              <div class="list">
+                <div class="list-item">
+                  Vereinssitz <strong><span class="text-nowrap">Graf-Gotter-Straße 21,</span> <span class="text-nowrap">99094 Erfurt-Molsdorf,</span> <span class="text-nowrap">+49(0) 3 62 02 - 49 97 55</span></strong>
+                </div>
+                <div class="list-item">
+                  eingetragen bei	<strong>Amtsgericht Erfurt, Vereinsregister Nr. VR 162012</strong>
+                </div>
+                <div class="list-item">
+                  Mitgliederzahl <strong>{{model.membership}}</strong>
+                </div>
+                <div class="list-item">
+                  {{#link-to "statute" class="btn btn-primary"}}
+                    {{t 'navigation.statute'}}
+                  {{/link-to}}
+                </div>
               </div>
             </div>
           </div>
 
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+
+          <div class="card">
+            <h3 class="card-title">{{t 'general.purposeOfTheAssociation'}}</h3>
+            <div class="card-text">
+              <p>Der Förderverein hat die Aufgabe, den Feuerwehrgedanken nach den geltenden Gesetzen über den Brandschutz, die Allgemeine Hilfe und den Katastrophenschutz zu fördern. Diese Zielsetzung wird insbesondere verwirklicht durch:</p>
+              <div class="list">
+                <div class="list-item">
+                  ideelle und materielle Unterstützung des Feuerwehrwesens im Ortsteil Erfurt-Molsdorf,
+                </div>
+                <div class="list-item">
+                  die Wahrnehmung der Interessen der Feuerwehr und ihrer Angehörigen,
+                </div>
+                <div class="list-item">
+                  die Betreuung der nicht mehr aktiv tätigen Feuerwehrleute,
+                </div>
+                <div class="list-item">
+                  Beratung der Aufgabenträger in Fragen des Brandschutzes, der Allgemeinen Hilfe und des Katastrophenschutzes,
+                </div>
+                <div class="list-item">
+                  Öffentlichkeitsarbeit und Anregungen aller Art.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+
+          <div class="card">
+            <h3 class="card-title">{{t 'general.membership'}}</h3>
+            <div class="card-text">
+              <p>Dem Förderverein können angehören:</p>
+              <div class="list">
+                <div class="list-item">
+                  Feuerwehrangehörige
+                  <ul>
+                    <li>
+                      nicht mehr aktiv tätige Feuerwehrleute
+                    </li>
+                    <li>
+                      Ehrenmitglieder
+                    </li>
+                    <li>
+                      fördernde Mitglieder und
+                    </li>
+                    <li>
+                      Mitglieder der Jugendfeuerwehr mit Bambini-Gruppe
+                    </li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  Nicht mehr aktiv tätige Feuerwehrleute sind solche Personen, die Feuerwehrangehörige gewesen sind und die Altersgrenze erreicht haben oder vorher auf eigenen Wunsch und ehrenhaft aus dem Dienst ausgeschieden sind.
+                </div>
+                <div class="list-item">
+                  Ehrenmitglieder sind natürliche Personen, die sich besondere Verdienste um das Feuerwehrwesen erworben haben. Ehrenmitglieder werden auf Vorschlag des Vorstandes von der Mitgliederversammlung ernannt.
+                </div>
+                <div class="list-item">
+                  Fördernde Mitglieder können unbescholtene natürliche oder juristische Personen sein, die durch ihren Beitritt ihre Verbundenheit mit der Feuerwehr bekunden wollen.
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
 
       </div>
     </div>
-  </div>
+
 </section>
 
 {{outlet}}
