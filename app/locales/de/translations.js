@@ -35,7 +35,7 @@ export default {
       description: "Wie gehe ich mit Feuer um? Wie geht ein richtiger Notruf? Hier lernt Ihr alles rund um die Feuerwehr."
     },
     honor: {
-      title: "Ehrenabteilung",
+      title: "Altersabteilung",
       description: "Die Alters- und Ehrenabteilung der Freiwilligen Feuerwehr Kapellendorf"
     },
     statute: "Satzung"
