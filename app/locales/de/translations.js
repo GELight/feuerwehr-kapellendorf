@@ -109,5 +109,6 @@ export default {
   currentlyNotApplicable: 'derzeit nicht einsetzbar',
   troopMan: 'Truppmann',
   squadLeader: 'Truppführer',
-  member: 'Mitglied'
+  member: 'Mitglied',
+  firefighterCandidates: 'Feuerwehrmann-Anwärter'
 };
