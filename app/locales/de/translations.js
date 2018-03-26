@@ -2,7 +2,7 @@ export default {
   application: {
     brand: {
       city: "Kapellendorf",
-      title: "Freiwillige Feuerwehr"
+      title: "Freiwillige Feuerwehr Kapellendorf e.V."
     }
   },
   navigation: {
@@ -110,5 +110,8 @@ export default {
   troopMan: 'Truppmann',
   squadLeader: 'Truppführer',
   member: 'Mitglied',
-  firefighterCandidates: 'Feuerwehrmann-Anwärter'
+  firefighterCandidates: 'Feuerwehrmann-Anwärter',
+  responsiblePublicRelations: 'Verantwortlicher Öffentlichkeitsarbeit',
+  responsibleAssociationWork: 'Verantwortlicher Vereinsarbeit',
+  responsiblePublicTechnology: 'Verantwortlicher Technik'
 };

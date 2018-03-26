@@ -94,11 +94,11 @@
       "id": "petermuecke",
       "firstName": "Peter",
       "lastName": "Mücke",
-      "board": false,
+      "board": true,
       "honor": true,
       "boardChairman": false,
       "deputyBoardChairman": false,
-      "treasurer": false,
+      "treasurer": true,
       "secretary": false,
       "assessor": false,
       "operationsDepartment": {
@@ -142,7 +142,9 @@
           "squadLeader": false,
           "troopMan": true,
           "operationalTasks": false,
-          "militaryCommittee": false,
+          "militaryCommittee": [
+              { "job": "fireChief" }
+          ],
           "member": [
             { "job": "troopMan" }
           ],
@@ -220,10 +222,10 @@
       "id": "michaelilmer",
       "firstName": "Michael",
       "lastName": "Ilmer",
-      "board": false,
+      "board": true,
       "honor": false,
       "boardChairman": false,
-      "deputyBoardChairman": false,
+      "deputyBoardChairman": true,
       "treasurer": false,
       "secretary": false,
       "assessor": false,
@@ -243,7 +245,10 @@
                   "active": true
               }
           ],
-          "militaryCommittee": false,
+          "militaryCommittee": [
+            { "job": "assessor" },
+            { "job": "responsiblePublicRelations" }
+          ],
           "member": [
             { "job": "groupLeader" }
           ],
@@ -275,7 +280,9 @@
           "squadLeader": false,
           "troopMan": true,
           "operationalTasks": false,
-          "militaryCommittee": false,
+          "militaryCommittee": [
+            { "job": "responsibleAssociationWork" }
+          ],
           "member": [
             { "job": "troopMan" }
           ],
@@ -417,7 +424,10 @@
               "active": true
             }
           ],
-          "militaryCommittee": false,
+          "militaryCommittee": [
+              { "job": "equipmentOfficer" },
+              { "job": "responsiblePublicTechnology" }
+          ],
           "member": [
             { "job": "troopMan" }
           ],
@@ -513,7 +523,9 @@
           "squadLeader": false,
           "troopMan": true,
           "operationalTasks": false,
-          "militaryCommittee": false,
+          "militaryCommittee": [
+              { "job": "assessor" }
+          ],
           "member": [
             { "job": "groupLeader" }
           ],
@@ -527,9 +539,9 @@
       "id": "jochenschmidt",
       "firstName": "Jochen",
       "lastName": "Schmidt",
-      "board": false,
+      "board": true,
       "honor": false,
-      "boardChairman": false,
+      "boardChairman": true,
       "deputyBoardChairman": false,
       "treasurer": false,
       "secretary": false,
@@ -545,7 +557,9 @@
           "squadLeader": false,
           "troopMan": true,
           "operationalTasks": false,
-          "militaryCommittee": false,
+          "militaryCommittee": [
+              { "job": "deputyFireChief" }
+          ],
           "member": [
             { "job": "groupLeader" }
           ],
@@ -779,5 +793,6 @@
           "saftyOfficer": false
       }
     }
+    
   ]
 }

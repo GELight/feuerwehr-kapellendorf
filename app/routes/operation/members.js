@@ -144,6 +144,51 @@ export default Ember.Route.extend({
         });
         list.push(safetyOfficerList);
 
+        let responsiblePublicRelationsList = Ember.A();
+        members.forEach((member) => {
+          if (member.get('operationsDepartment.militaryCommittee')) {
+            member.get('operationsDepartment.militaryCommittee').forEach((jobs) => {
+              if (jobs.job === "responsiblePublicRelations") {
+                responsiblePublicRelationsList.push({
+                  member: member,
+                  job: "responsiblePublicRelations"
+                });
+              }
+            });
+          }
+        });
+        list.push(responsiblePublicRelationsList);
+
+        let responsibleAssociationWorkList = Ember.A();
+        members.forEach((member) => {
+          if (member.get('operationsDepartment.militaryCommittee')) {
+            member.get('operationsDepartment.militaryCommittee').forEach((jobs) => {
+              if (jobs.job === "responsibleAssociationWork") {
+                responsibleAssociationWorkList.push({
+                  member: member,
+                  job: "responsibleAssociationWork"
+                });
+              }
+            });
+          }
+        });
+        list.push(responsibleAssociationWorkList);
+
+        let responsiblePublicTechnologyList = Ember.A();
+        members.forEach((member) => {
+          if (member.get('operationsDepartment.militaryCommittee')) {
+            member.get('operationsDepartment.militaryCommittee').forEach((jobs) => {
+              if (jobs.job === "responsiblePublicTechnology") {
+                responsiblePublicTechnologyList.push({
+                  member: member,
+                  job: "responsiblePublicTechnology"
+                });
+              }
+            });
+          }
+        });
+        list.push(responsiblePublicTechnologyList);
+
         return list;
       })
     });
